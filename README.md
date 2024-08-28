@@ -1,29 +1,29 @@
 # SVG Badge Generator
 
-A simple and intuitive web application for generating customizable SVG badges. This tool allows users to adjust text, colors, and layout dynamically and provides the SVG code and preview in real-time.
-
-## Features
-
-- **Live Preview**: See the SVG badge as you customize it.
-- **Customizable Text**: Edit the label and hint text.
-- **Adjustable Layout**: Modify the width, height, font sizes, and divider line.
-- **Color Options**: Choose colors for the text and background sections.
-- **SVG Code Output**: Copy the generated SVG code with a single click.
+This project is a React-based SVG Badge Generator that allows users to create custom SVG badges with personalized text, colors, and layouts. The application is structured to be user-friendly, with controls for text, font size, layout dimensions, and color customization. The generated SVG code can be copied and used directly in your projects.
 
 ## Project Structure
 
-```bash
+```plaintext
 .
+├── package.json          # Project dependencies and scripts
+├── package-lock.json     # Lockfile for exact dependency versions
 ├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── robots.txt
-├── src
-│   ├── App.css
-│   ├── App.tsx
-│   ├── SVGCode.tsx
-│   ├── SVGControls.tsx
-│   ├── SVGPreview.tsx
-│   ├── index.css
-│   ├── index.tsx
-└── package.json
+│   ├── favicon.ico       # Favicon for the app
+│   ├── index.html        # Main HTML file for React to mount
+│   └── robots.txt        # Configuration for web crawlers
+├── README.md             # This README file
+├── src                   # Main source directory
+│   ├── About.tsx         # Component for project information
+│   ├── App.css           # Main styling for the app
+│   ├── App.tsx           # Main App component containing layout
+│   ├── Colors.tsx        # Component for color customization controls
+│   ├── index.css         # Global styling
+│   ├── index.tsx         # Entry point for React
+│   ├── react-app-env.d.ts # TypeScript environment settings
+│   ├── SizeAndLayout.tsx # Component for layout size controls
+│   ├── SVGCode.tsx       # Component for displaying generated SVG code
+│   ├── SVGControls.tsx   # Legacy control component (split into others)
+│   ├── SVGRender.tsx     # Component for rendering the SVG preview
+│   └── TextAndFont.tsx   # Component for text and font size controls
+└── tsconfig.json         # TypeScript configuration
