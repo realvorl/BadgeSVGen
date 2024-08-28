@@ -2,6 +2,10 @@
 
 This project is a React-based SVG Badge Generator that allows users to create custom SVG badges with personalized text, colors, and layouts. The application is structured to be user-friendly, with controls for text, font size, layout dimensions, and color customization. The generated SVG code can be copied and used directly in your projects.
 
+## In a nutshell 
+
+Visit [the github pages](https://realvorl.github.io/BadgeSVGen/) of this repo, and you can create badges like these: [![cusotm-badge](https://bit.ly/v-here-badge)](https://realvorl.github.io/BadgeSVGen/) [![cusotm-badge](https://bit.ly/v-app-badge)](https://viorel-petcu.com)  [![custom-badge](https://bit.ly/veo-boo-badge)](https://realvorl.github.io/BadgeSVGen/)
+
 ## Project Structure
 
 ```plaintext
