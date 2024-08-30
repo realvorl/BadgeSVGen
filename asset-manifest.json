@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/BadgeSVGen/static/css/main.6922b2dd.css",
-    "main.js": "/BadgeSVGen/static/js/main.0b7a63b4.js",
+    "main.css": "/BadgeSVGen/static/css/main.ce92fc1a.css",
+    "main.js": "/BadgeSVGen/static/js/main.5863b098.js",
     "index.html": "/BadgeSVGen/index.html",
-    "main.6922b2dd.css.map": "/BadgeSVGen/static/css/main.6922b2dd.css.map",
-    "main.0b7a63b4.js.map": "/BadgeSVGen/static/js/main.0b7a63b4.js.map"
+    "main.ce92fc1a.css.map": "/BadgeSVGen/static/css/main.ce92fc1a.css.map",
+    "main.5863b098.js.map": "/BadgeSVGen/static/js/main.5863b098.js.map"
   },
   "entrypoints": [
-    "static/css/main.6922b2dd.css",
-    "static/js/main.0b7a63b4.js"
+    "static/css/main.ce92fc1a.css",
+    "static/js/main.5863b098.js"
   ]
 }
