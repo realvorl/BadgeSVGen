@@ -141,3 +141,22 @@ label span {
 .sponsor-button img {
   margin-right: 10px;
 }
+
+.load-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.uuid-input {
+  padding: 5px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.load-button {
+  padding: 6px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}

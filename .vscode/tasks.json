@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "tsc: watch - tsconfig.json",
+            "type": "shell",
+            "command": "tsc",
+            "args": ["-w", "-p", "tsconfig.json"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$tsc-watch"]
+        }
+    ]
+}
