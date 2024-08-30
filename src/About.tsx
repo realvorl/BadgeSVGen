@@ -24,15 +24,16 @@ const About: React.FC = () => {
           </span>
         </a>
         <span> </span>
-        <span>
-          <svg height="20" width="98" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="20" fill="#050505" />
-            <rect x="32" width="66" height="20" fill="#4b6c8b" />
-            <text text-anchor="middle" font-weight="bold" font-size="13" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" fill="#fff" x="16" y="50%" dy=".35em">OR</text>
-            <text text-anchor="middle" font-size="12" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" fill="#fff" x="65" y="50%" dy=".35em">contribute</text>
-          </svg>
-        </span>
-
+        <a href="https://github.com/realvorl/BadgeSVGen/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">
+          <span>
+            <svg height="20" width="98" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="20" fill="#050505" />
+              <rect x="32" width="66" height="20" fill="#4b6c8b" />
+              <text text-anchor="middle" font-weight="bold" font-size="13" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" fill="#fff" x="16" y="50%" dy=".35em">OR</text>
+              <text text-anchor="middle" font-size="12" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" fill="#fff" x="65" y="50%" dy=".35em">contribute</text>
+            </svg>
+          </span>
+        </a>
       </div>
     </div>
   );
