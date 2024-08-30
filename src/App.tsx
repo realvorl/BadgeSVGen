@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import TextAndFont from './TextAndFont';
-import SizeAndLayout from './SizeAndLayout';
-import Colors from './Colors';
-import SVGCode from './SVGCode';
-import SVGRender from './SVGRender';
-import About from './About';
-import saveToGist from './saveToGist';
-import loadFromGist from './loadFromGist';
-import './App.css';
+import TextAndFont from './components/TextAndFont/TextAndFont';
+import SizeAndLayout from './components/SizeAndLayout/SizeAndLayout';
+import Colors from './components/Colors/Colors';
+import SVGCode from './components/SVGCode/SVGCode';
+import SVGRender from './components/SVGRender/SVGRender';
+import About from './components/About/About';
+import saveToGist from './utils/saveToGist';
+import loadFromGist from './utils/loadFromGist';
+import './components/App/App.css';
 
 const App: React.FC = () => {
   const [inputs, setInputs] = useState({
@@ -25,6 +25,9 @@ const App: React.FC = () => {
   });
 
   const [uuid, setUuid] = useState('');
+
+  // Check if the GitHub token is available in the environment
+  const isGitHubTokenAvailable = Boolean(process.env.REACT_APP_GITHUB_TOKEN);
 
   const handleSave = async () => {
     const gistId = await saveToGist(inputs);
@@ -79,42 +82,38 @@ const App: React.FC = () => {
         />
         <About />
 
-        <div className="load-container">
-          <input
-            type="text"
-            value={uuid}
-            onChange={(e) => setUuid(e.target.value)}
-            placeholder="Enter UUID"
-            className="uuid-input"
-          />
-          <button onClick={handleLoad} className="load-button">
-            Load Badge
-          </button>
-        </div>
+        {isGitHubTokenAvailable && (
+          <div className="load-container">
+            <input
+              type="text"
+              value={uuid}
+              onChange={(e) => setUuid(e.target.value)}
+              placeholder="Enter UUID"
+              className="uuid-input"
+            />
+            <button onClick={handleLoad} className="load-button">
+              Load Badge
+            </button>
+          </div>
+        )}
 
-        <button onClick={handleSave}>
-          Save Badge
-        </button>
+        {isGitHubTokenAvailable && (
+          <button onClick={handleSave}>
+            Save Badge
+          </button>
+        )}
+
+        {!isGitHubTokenAvailable && (
+          <p className="warning-text">
+            Saving and loading badges is disabled because the GitHub token is not available.
+          </p>
+        )}
       </div>
     </div>
   );
 };
 
-interface BadgeInputs {
-  text1: string;
-  text2: string;
-  width: number;
-  height: number;
-  fontSize: number;
-  hintSize: number;
-  fillColor1: string;
-  fillColor2: string;
-  textColor1: string;
-  textColor2: string;
-  dividerLine: number;
-}
-
-function generateSVG(inputs: BadgeInputs) {
+function generateSVG(inputs: any) {
   return `
     <svg height="${inputs.height}" width="${inputs.width}" xmlns="http://www.w3.org/2000/svg">
       <rect width="${inputs.dividerLine}" height="${inputs.height}" fill="${inputs.fillColor1}"/>

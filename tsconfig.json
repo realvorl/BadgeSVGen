@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "src/components", "src/App.tsx"  ]
 }
