@@ -1,6 +1,6 @@
-# Contributing to SVG Badge Generator
+# Contributing to Badge Maker Lite
 
-Thank you for considering contributing to the SVG Badge Generator! We welcome contributions of all kinds: new features, bug fixes, documentation improvements, or optimizations.
+Thank you for considering contributing to the Badge Maker Lite! We welcome contributions of all kinds: new features, bug fixes, documentation improvements, or optimizations.
 
 ## How to Contribute
 
@@ -60,6 +60,11 @@ When opening a pull request, please provide a detailed description of your chang
 ## Reporting Issues
 
 If you encounter a bug or have a feature request, please open an issue on the [GitHub Issues](https://github.com/realvorl/BadgeSVGen/issues) page. Provide as much detail as possible to help us address the issue.
+
+## Interested on a colab ?
+
+Nice! This project comes with it's own inbox: _badge-maker@viorel-petcu.com_  
+E-Mails received here are another way of getting in contact with me, I would love to hear if you have ideas where to take this project next. 
 
 ## Code of Conduct
 

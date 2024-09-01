@@ -4,7 +4,7 @@ const About: React.FC = () => {
   return (
     <div className="group information-panel">
       <h2>About This Project</h2>
-      <p>This SVG Badge Generator allows you to easily create custom SVG badges with personalized text, colors, and layouts. Once you have customized your badge, you can copy the generated SVG code to use in your projects.</p>
+      <p>This Badge Maker Lite allows you to easily create custom SVG badges with personalized text, colors, and layouts. Once you have customized your badge, you can copy the generated SVG code to use in your projects.</p>
       <p>If you prefer a PNG version, right-click the rendered badge, choose "Inspect", and then use your browser's developer tools to "Capture node screenshot". This feature is available in most modern browsers.</p>
       <p>If you enjoy this project and would like to see more improvements, consider sponsoring it through Ko-fi. Your support is greatly appreciated!</p>
       <div className="sponsor-button">
@@ -35,6 +35,7 @@ const About: React.FC = () => {
           </span>
         </a>
       </div>
+      <p>Created by <a href="https://github.com/realvorl" target='_blank' rel="noopener noreferrer" >Veo</a>.</p>
     </div>
   );
 };

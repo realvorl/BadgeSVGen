@@ -1,6 +1,6 @@
-# SVG Badge Generator
+# Badge Maker Lite
 
-Welcome to the SVG Badge Generator! This project is a React-based tool that allows you to create custom SVG badges with personalized text, colors, and layouts. The application is user-friendly, providing real-time previews of your designs and offering features to save and load badge configurations.
+Welcome to the Badge Maker Lite! This project is a React-based tool that allows you to create custom SVG badges with personalized text, colors, and layouts. The application is user-friendly, providing real-time previews of your designs and offering features to save and load badge configurations.
 
 ## Features
 
