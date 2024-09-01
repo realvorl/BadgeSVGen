@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Badge Maker Slim</title>
 
-  <!-- Conditionally include Google Analytics -->
-  <script>
-    const trackingId = process.env.REACT_APP_GA_TRACKING_ID;
-    if (trackingId) {
-      const script = document.createElement('script');
-      script.async = true;
-      script.src = `https://www.googletagmanager.com/gtag/js?id=${trackingId}`;
-      document.head.appendChild(script);
+  <!-- Google Analytics (conditionally included based on environment variable) -->
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SVPB0WXS56"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SVPB0WXS56');
+    </script>
+  
 
-      script.onload = () => {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', trackingId);
-      };
-    }
-  </script>
+  <!-- Other head elements -->
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 </head>
+
 <body>
   <div id="root"></div>
 </body>
+
 </html>
