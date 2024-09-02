@@ -22,10 +22,10 @@ if (trackingId) {
   `;
   
   // Replace the placeholder with the Google Analytics script
-  indexFile = indexFile.replace('%REACT_APP_GA_SCRIPT%', gaScript);
+  indexFile = indexFile.replace('%TPL%', gaScript);
 } else {
   // Remove the placeholder if no tracking ID is set
-  indexFile = indexFile.replace('%REACT_APP_GA_SCRIPT%', '');
+  indexFile = indexFile.replace('%TPL%', '');
 }
 
 // Write the modified index.html back to the public directory
