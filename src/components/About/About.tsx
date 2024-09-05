@@ -18,8 +18,8 @@ const About: React.FC = () => {
             <svg height="20" width="118" xmlns="http://www.w3.org/2000/svg">
               <rect width="78" height="20" fill="#150080" />
               <rect x="78" width="40" height="20" fill="#d14010" />
-              <text text-anchor="middle" font-weight="bold" font-size="14" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" fill="#fff" x="39" y="50%" dy=".35em">open an</text>
-              <text text-anchor="middle" font-size="13" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" fill="#fff" x="98" y="50%" dy=".35em">issue</text>
+              <text textAnchor="middle" fontWeight="bold" fontSize="14" fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif" fill="#fff" x="39" y="50%" dy=".35em">open an</text>
+              <text textAnchor="middle" fontSize="13" fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif" fill="#fff" x="98" y="50%" dy=".35em">issue</text>
             </svg>
           </span>
         </a>
@@ -29,8 +29,8 @@ const About: React.FC = () => {
             <svg height="20" width="98" xmlns="http://www.w3.org/2000/svg">
               <rect width="32" height="20" fill="#050505" />
               <rect x="32" width="66" height="20" fill="#4b6c8b" />
-              <text text-anchor="middle" font-weight="bold" font-size="13" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" fill="#fff" x="16" y="50%" dy=".35em">OR</text>
-              <text text-anchor="middle" font-size="12" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" fill="#fff" x="65" y="50%" dy=".35em">contribute</text>
+              <text textAnchor="middle" fontWeight="bold" fontSize="13" fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif" fill="#fff" x="16" y="50%" dy=".35em">OR</text>
+              <text textAnchor="middle" fontSize="12" fontFamily="Verdana,Geneva,DejaVu Sans,sans-serif" fill="#fff" x="65" y="50%" dy=".35em">contribute</text>
             </svg>
           </span>
         </a>
