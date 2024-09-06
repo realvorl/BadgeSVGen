@@ -47,5 +47,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you find this project useful and would like to see more improvements, consider supporting it through Ko-Fi. Your support is greatly appreciated!
 
-[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/realvorl)
+[![custom-badge](https://raw.githubusercontent.com/realvorl/realvorl/main/badges/keep-calm-love-ko-fi.svg)](https://ko-fi.com/realvorl)
+
 
