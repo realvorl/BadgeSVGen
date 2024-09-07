@@ -31,7 +31,7 @@ const App: React.FC = () => {
   });
 
   const query = useQuery();
-  const [isUrlProcessed, setIsUrlProcessed] = useState(false); // Track if the URL was already processed
+  const [isUrlProcessed, setIsUrlProcessed] = useState(false);
 
   useEffect(() => {
     if (!isUrlProcessed) {
@@ -39,17 +39,17 @@ const App: React.FC = () => {
       if (encodedData) {
         try {
           const decodedData = decodeFromBase64(encodedData);
-          // Update inputs from URL if the data is different
           if (JSON.stringify(decodedData) !== JSON.stringify(inputs)) {
-            setInputs(decodedData);
-            setIsUrlProcessed(true); // Set the flag that the URL data has been processed
+            const parsedData = JSON.parse(decodedData);
+            setInputs(parsedData); // Only set inputs if data is different
           }
+          setIsUrlProcessed(true); // Mark URL as processed
         } catch (error) {
           console.error("Error decoding Base64 data", error);
         }
       }
     }
-  }, [query, isUrlProcessed]);
+  }, [query, isUrlProcessed, inputs]); // Proper dependency array
 
   // Function to update state and disconnect from URL
   const handleInputChange = (key: string, value: any) => {
@@ -72,7 +72,7 @@ const App: React.FC = () => {
         />
         <div className="group">
           <SVGCode svgString={generateSVG(inputs)} />
-          <hr/>
+          <hr />
           <ShareButton inputs={inputs} />
         </div>
         <SizeAndLayout

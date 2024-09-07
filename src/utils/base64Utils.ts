@@ -1,9 +1,20 @@
-// src/utils/base64Utils.ts
-export const encodeToBase64 = (json: object) => {
-  return btoa(JSON.stringify(json));
-};
+// base64Utils.ts
+export function encodeToBase64(input: string) {
+  const utf8Encoder = new TextEncoder();
+  const byteArray = utf8Encoder.encode(input);
+  let binaryString = '';
+  byteArray.forEach(byte => {
+    binaryString += String.fromCharCode(byte);
+  });
+  return btoa(binaryString);
+}
 
-export const decodeFromBase64 = (base64: string) => {
-  const jsonString = atob(base64);
-  return JSON.parse(jsonString);
-};
+export function decodeFromBase64(encoded: string) {
+  const binaryString = atob(encoded);
+  const byteArray = new Uint8Array(binaryString.length);
+  for (let i = 0; i < binaryString.length; i++) {
+    byteArray[i] = binaryString.charCodeAt(i);
+  }
+  const utf8Decoder = new TextDecoder();
+  return utf8Decoder.decode(byteArray);
+}
