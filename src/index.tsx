@@ -10,7 +10,7 @@ if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
     <React.StrictMode>
-      <BrowserRouter>  {/* Wrap the App in BrowserRouter */}
+      <BrowserRouter basename='/BadgeSVGen'>  {/* Wrap the App in BrowserRouter */}
         <App />
       </BrowserRouter>
     </React.StrictMode>
