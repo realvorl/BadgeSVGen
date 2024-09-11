@@ -18,10 +18,12 @@ Visit [the github pages](https://realvorl.github.io/BadgeSVGen/) of this repo, a
 
 [![cusotm-badge](https://bit.ly/v-here-badge)](https://realvorl.github.io/BadgeSVGen/)  
 [![cusotm-badge](https://bit.ly/v-app-badge)](https://viorel-petcu.com)  
-[![custom-badge](https://raw.githubusercontent.com/realvorl/realvorl/main/badges/open-an-issue.svg)](https://realvorl.github.io/BadgeSVGen/)  
-[![custom-badge](https://raw.githubusercontent.com/realvorl/realvorl/main/badges/or-contribute.svg)](https://realvorl.github.io/BadgeSVGen/)  
+[![custom-badge](https://raw.githubusercontent.com/realvorl/realvorl/main/badges/open-an-issue.svg)](https://realvorl.github.io/BadgeSVGen/?data=eyJ0ZXh0MSI6Im9wZW4gYW4iLCJ0ZXh0MiI6Imlzc3VlIiwid2lkdGgiOjEyNCwiaGVpZ2h0IjoyMywiZm9udFNpemUiOjE2LCJoaW50U2l6ZSI6MTQsImZpbGxDb2xvcjEiOiIjMGIwYmQwIiwiZmlsbENvbG9yMiI6IiNkMDBiMGIiLCJ0ZXh0Q29sb3IxIjoiI2ZmZmZmZiIsInRleHRDb2xvcjIiOiIjZmZmZmZmIiwiZGl2aWRlckxpbmUiOjg0fQ==)  
+[![custom-badge](https://raw.githubusercontent.com/realvorl/realvorl/main/badges/or-contribute.svg)](https://realvorl.github.io/BadgeSVGen/?data=eyJ0ZXh0MSI6Im9yIiwidGV4dDIiOiJjb250cmlidXRlIiwid2lkdGgiOjExOSwiaGVpZ2h0IjoyMywiZm9udFNpemUiOjE2LCJoaW50U2l6ZSI6MTQsImZpbGxDb2xvcjEiOiIjNDg0ODVjIiwiZmlsbENvbG9yMiI6IiM1NTY0YTAiLCJ0ZXh0Q29sb3IxIjoiI2ZmZmZmZiIsInRleHRDb2xvcjIiOiIjZmZmZmZmIiwiZGl2aWRlckxpbmUiOjM4fQ==)  
 [![custom-badge](https://bit.ly/veo-boo-badge)](https://realvorl.github.io/BadgeSVGen/)  
 ## Save and Load Feature
+
+
 
 ### Save a Badge
 
