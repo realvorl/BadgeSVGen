@@ -32,7 +32,7 @@ assignees: ''
 *Please provide details about your environment:*
 
 - **Browser/OS:** (e.g., Chrome, Windows 10)
-- **Version:** (e.g., Badge Maker Slim v1.0.0)
+- **Version:** (e.g., Badge Maker Lite v1.0.0)
 - **Other relevant information:** (e.g., running locally with or without GitHub PAT)
 
 ### Additional Information
